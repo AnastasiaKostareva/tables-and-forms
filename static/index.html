@@ -9,11 +9,20 @@
 <main>
     <h1>Найди себе друга!</h1>
     <form action="/pets/orders" method="POST">
-        <label for="petType">Тип питомца
-            <input type="text" id="petType" name="petType">
+        <label>Ваше любимое животное</label>
+            <select name="petType">
+                <option value="cat" selected>Кот</option>
+                <option value="dog">Собака</option>
+                <option value="tiger">Тигр</option>
+            </select>
+        <label>
+            <input type="radio" name="gender" value="boy">Мужской
         </label>
-        <label for="gender">Пол
-            <input type="text" id="gender" name="gender">
+        <label>
+            <input type="radio" name="gender" value="girl">Женский
+        </label>
+        <label>
+            <input type="radio" name="gender" value="none">Без пола
         </label>
         <label for="eyeColor">Цвет глаз
             <input type="text" id="eyeColor" name="eyeColor">
