@@ -22,31 +22,39 @@
             <input type="radio" name="gender" value="girl">Женский
         </label>
         <label>
-            <input type="radio" name="gender" value="none">Без пола
+            <input type="radio" name="gender" value="none" checked>Не задан
         </label>
-        <label for="eyeColor">Цвет глаз
-            <input type="text" id="eyeColor" name="eyeColor">
+
+        <label>Цвет глаз
+            <input type="color" name="eyeColor">
         </label>
-        <label for="tailLength">Длина тела
-            <input type="text" id="tailLength" name="tailLength">
+
+        <label>Длина хвоста
+            <input type="number" name="tailLength" min="7" max="120" placeholder="7">
         </label>
-        <label for="name">Имя
-            <input type="text" id="name" name="name">
+
+        <label>Имя
+            <input type="text" name="name" minlength="3" maxlength="50" placeholder="имя">
         </label>
-        <label for="dateOfBirth">Имя
-            <input type="text" id="dateOfBirth" name="dateOfBirth">
+
+        <label>День Рождения
+            <input type="date" name="dateOfBirth">
         </label>
-        <label for="email">Имя
-            <input type="text" id="email" name="email">
+
+        <label>Почта
+            <input type="email" name="email" placeholder="exaple@mail.com">
         </label>
-        <label for="phone">Имя
-            <input type="text" id="phone" name="phone">
+
+        <label>Номер телефона
+            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__">
         </label>
-        <label for="rules">Имя
-            <input type="text" id="rules" name="rules">
+
+        <label>
+            <input type="checkbox" name="rules" value="true"> Рулит?
         </label>
 
         <input type="submit" value="Отправить"> 
+        <input type="reset">
     </form>
 
 </main>
